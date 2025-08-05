@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reset button with Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Feedback Form</h2>
+      <form id="feedbackForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" rows="4" required></textarea>
+
+        <div class="buttons">
+          <button type="submit">Submit</button>
+          <button type="button" id="resetBtn">Reset</button>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+
+<!-- To reset all fields:
+
+js
+Copy
+Edit
+const form = document.getElementById("feedbackForm");
+form.reset(); // resets all inputs inside the form to empty/default
+👉 form.reset() is a built-in method that clears all input fields in the form at once. -->
