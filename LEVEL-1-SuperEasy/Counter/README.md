@@ -14,12 +14,7 @@ A simple and beginner-friendly Counter App built using **HTML**, **CSS**, and **
 
 ---
 
-## 🚀 Live Preview
 
-> [Click here to view the project](https://github.com/systemandtec2002/100-Frontend-Mini-Projects/tree/main/LEVEL-1-SuperEasy/Counter)  
-> *(GitHub folder view — You can add GitHub Pages link if deployed)*
-
----
 
 ## 📁 Technologies Used
 
