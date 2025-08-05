@@ -24,7 +24,7 @@ This form allows users to enter their name, email, and feedback — and provides
 
 ## 📷 Screenshot
 
-![App Screenshot](feedback-form(reset-functionality).png)  
+![App Screenshot](LEVEL-1-SuperEasy/resetButton/feedback-form(reset functionality).png)  
 *Add a screenshot of your form UI here (optional but recommended)*
 
 ---
