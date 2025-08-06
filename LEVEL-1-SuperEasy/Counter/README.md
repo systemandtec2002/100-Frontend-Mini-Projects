@@ -27,7 +27,6 @@ A simple and beginner-friendly Counter App built using **HTML**, **CSS**, and **
 ## 📷 Screenshot
 
 ![App Screenshot](counter.png)  
-*Add a screenshot of your app running in the browser*
 
 ---
 

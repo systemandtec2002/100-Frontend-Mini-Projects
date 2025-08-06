@@ -14,12 +14,12 @@ A fun and beginner-friendly mini project to toggle a light bulb **ON** and **OFF
 
 ---
 
-## 🖥️ Preview
+## 📷 Screenshot
 
-![preview image here](lightOn-Of.png)  
-
+![App Screenshot](LightOn-of.png)  
 
 ---
+
 
 ## 🚀 How It Works
 
