@@ -25,7 +25,7 @@ This is a beginner-friendly mini project where the background color of the page 
 
 👉 Screenshot after clicking one of the color buttons:
 
-![screenshot](BackgroundChange.png);
+![screenshot](BackgroundChange.png)
 
 
 
