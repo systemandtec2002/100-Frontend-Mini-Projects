@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-color:rgb(51, 51, 134);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 100%;
+  max-width: 500px;
+  height: 200px;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 8px 6px 5px  rgba(0, 0, 0, 0,0.5);
+}
+
+h1{
+  font-size: 2.5rem;
+  font-weight: 1000;
+  color:rgb(41, 41, 173);
+text-decoration: underline;
+}
+
+h2{
+  margin-top: 30px;
+  font-size: 3rem;
+  padding: 10px;
+}
+
+
+
