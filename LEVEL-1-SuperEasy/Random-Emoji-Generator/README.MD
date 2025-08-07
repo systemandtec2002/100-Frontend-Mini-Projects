@@ -6,7 +6,7 @@ This is a fun and beginner-friendly **Random Emoji Generator** built using **HTM
 
 ## 📸 Preview
 
-![Random Emoji Generator Screenshot](randomEmoji.png) 
+![Random Emoji Generator Screenshot](RandomEmoji.png) 
 
 ---
 
