@@ -45,7 +45,7 @@ This is a beginner-friendly mini project where the background color of the page 
 - How to change the `style` of an element using JavaScript
 - How to organize files in a simple frontend project
 
----
+
 
 
 
