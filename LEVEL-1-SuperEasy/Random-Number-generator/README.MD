@@ -6,7 +6,7 @@ Built with **HTML**, **CSS**, and **JavaScript**.
 ---
 
 ## 📸 Preview
-![Preview Screenshot](preview.png)  
+![Preview Screenshot](randomNumberGenerator.png)  
 
 
 ---
