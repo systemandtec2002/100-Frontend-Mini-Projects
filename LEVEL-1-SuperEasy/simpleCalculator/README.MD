@@ -31,4 +31,4 @@ This project demonstrates DOM manipulation, event handling, and basic JavaScript
 ## 📖 How to Use
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/calculator.git
+https://github.com/systemandtec2002/100-Frontend-Mini-Projects/tree/main/LEVEL-1-SuperEasy/simpleCalculator
