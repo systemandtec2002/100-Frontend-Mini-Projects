@@ -8,6 +8,8 @@ btnEle.addEventListener("click",() =>{
   const text = inputEle.value.trim(); // remove spaces
   const length = text.length;
 
+
+
   if(length === ""){
 resultEle.textContent = "⚠️ Please type something!";
  resultEle.style.color = "orange";
@@ -21,4 +23,8 @@ resultEle.textContent = `❌ Too short! (${length} characters)`;
         resultEle.textContent = `✅ Length is perfect! (${length} characters)`;
         resultEle.style.color = "green";
     }
+
+    
+  
+
 })
