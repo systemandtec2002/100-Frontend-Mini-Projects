@@ -1,36 +1,24 @@
+const inputEle = document.getElementById('textInput');
+
 const btnEle = document.getElementById('checkBtn');
-const inputEle = document.getElementById('numberInput');
+
 const resultEle = document.getElementById('result');
 
-
-
 btnEle.addEventListener("click",() =>{
- 
-    resultEle.textContent = "";
-   const rawValue = inputEle.value.trim(); 
-  const value = Number(rawValue);
+  const text = inputEle.value.trim(); // remove spaces
+  const length = text.length;
 
-   if(rawValue === "" || isNaN(value)){
-
-resultEle.textContent = " ⚠️ please Enter a valid Number";
-return
-   }
-   if(value > 0){
-resultEle.textContent = `${value} is Postive ✅`;
-resultEle.style.color = "green";
-   }else if(value < 0){
-resultEle.textContent = `${value} is Negative ❌`;
-resultEle.style.color = "red";
-   }else{
-    resultEle.textContent = `The Number is Zero 🔵`;
-resultEle.style.color = "blue";
-   }
-   clearAfterDelay(); 
-  
+  if(length === ""){
+resultEle.textContent = "⚠️ Please type something!";
+ resultEle.style.color = "orange";
+  }else if(length < 5){
+resultEle.textContent = `❌ Too short! (${length} characters)`;
+        resultEle.style.color = "red";
+  }else if(length > 20){
+ resultEle.textContent = `❌ Too long! (${length} characters)`;
+        resultEle.style.color = "red";
+  }else {
+        resultEle.textContent = `✅ Length is perfect! (${length} characters)`;
+        resultEle.style.color = "green";
+    }
 })
-function clearAfterDelay() {
-  setTimeout(() => {
-    resultEle.textContent = "";
-    inputEle.value = " ";
-  }, 1000);
-}
