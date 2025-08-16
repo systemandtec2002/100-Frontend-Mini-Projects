@@ -7,18 +7,32 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="main">
-    <h2>BMI CALCULATOR</h2>
-    <label for="height">Height(CM)<input type="number" placeholder="Enter your Height here" id="height"></label>
-    <br>
-    <br>
+  <div class="container">
+<div class="header">
+  <h1>BMI</h1>
+  </div>
+  <div class="height">
+    <label for="" class="height-info">
+  Height(CM)
+    </label>
+   <input type="number" id="height" placeholder="Enter your height" />
+  </div>
+  <div class="weight">
+    <label for="" class="weight-info">
+      weight(KG)
+    </label>
+    <input type="number" id="weight" placeholder="Enter your weight">
+  </div>
+  <div class="calculate-bmi">
+    <button id="calculate-bmi">
+      Calculate BMI
+    </button>
+  </div>
+  <div class="result">
+    <p>your BMI is <span id="bmi-value">00</span> and you are <span id="bmi-status">00</span></p>
+  </div>
 
-     <label for="weight">weight(KG)<input type="number" placeholder="Enter yout weight here" id="weight"></label>
-     <br>
-     <br>
-     <button onclick="calculateBmi()">CALCULATE</button>
-     <h2 id="bmi"></h2>
-     <p id="status"></p>
+    
   </div>
 
   <script src="index.js"></script>
