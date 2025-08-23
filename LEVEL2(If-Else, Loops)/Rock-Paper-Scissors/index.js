@@ -3,33 +3,44 @@ let computerScore = 0;
 
 const choices = document.querySelectorAll('.choice');
 
-const msgPara = document.getElementById('#msg');
+const msgPara = document.getElementById('msg');
+
+const userScprePara = document.getElementById('player-score');
+const computerScorePara  = document.getElementById('computer-score');
 
 const genComputerChoice =  () =>{
   // rock, paper, scissor
-  const options = ['rock', 'paper', 'scissor'];
+  const options = ['rock', 'paper', 'scissors'];
   const randomIdx = Math.floor(Math.random() *3);
   return options[randomIdx];
 
 } 
 const drawGame = () =>{
-  console.log("Game Was Draw");
+ 
+   msgPara.innerText = "It's a Draw. play again.";
+    msgPara.style.backgroundColor = "#081b31";
 }
 
-const showWinner = (userWin) =>{
+const showWinner = (userWin, userChoice, comChoice) =>{
 if(userWin){
-msgPara.innerText = "Player Won!";
+  userScore++;
+  userScprePara.innerText = userScore;
+msgPara.innerText = `Player Win! Your ${userChoice} beats ${comChoice}`;
+msgPara.style.backgroundColor = "green";
 }else{
-  msgPara.innerText = "Computer Lost!";
+  computerScore++;
+  computerScorePara.innerText = computerScore;
+  msgPara.innerText = `Player Lose! ${comChoice} beats Your ${userChoice}`;
+  msgPara.style.backgroundColor = "red";
 }
 }
 
 
 
 const playGame = (userChoice) =>{
-console.log("user choice", userChoice);
+
 const comChoice = genComputerChoice();
-console.log("computer choice", comChoice);
+
 
 if(userChoice === comChoice){
 // draw game
@@ -40,11 +51,11 @@ drawGame();
 // scissors, paper
 userWin = comChoice === "paper" ? false :  true;
   }else if(userChoice === 'paper'){
-    userWin = comChoice === "scissor" ? false :  true;
+    userWin = comChoice === "scissors" ? false :  true;
   }else{
     userWin = comChoice === "rock" ? false :  true;
   }
-  showWinner(userWin);
+  showWinner(userWin, userChoice, comChoice );
 }
 }
 
