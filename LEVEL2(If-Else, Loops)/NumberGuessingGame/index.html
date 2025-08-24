@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p>Enter a Guess between 0 and 100</p>
+  <!-- why we use form tag here beavuse after typing nuber we can directly submit here -->
+  <form>
+    <input class="user-input" type="number" placeholder="Enter a number" min="0" max="100" required>
+    <div>
+<button>Submit</button>
+    <button class="start-game" disabled>Start Game</button>
+    </div>
+    
+  </form>
+
+  <script src="index.js"></script>
+</body>
+</html>
