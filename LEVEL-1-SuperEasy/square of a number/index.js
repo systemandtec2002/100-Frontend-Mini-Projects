@@ -8,11 +8,13 @@ const value = Number(input.value.trim());
     if(!isNaN(value)){
  const square = value * value;
  result.textContent = `Result: ${square}`;
+  
     }
      else {
         result.textContent = "Please enter a valid number.";
         result.style.color = "#ef4444"; 
       }
+     
   })
     
 
