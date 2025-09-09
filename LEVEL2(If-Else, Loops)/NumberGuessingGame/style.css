@@ -1,25 +1,30 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
+  height: 100vh;
   text-align: center;
   font-family: sans-serif;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.number-guess{
-  margin-top:50px;
+.number-guess {
+  margin-top: 50px;
 }
-.number-guess h2{
-  margin-bottom:10px;
+
+.number-guess h2 {
+  margin-bottom: 10px;
   font-size: 1.5rem;
   font-weight: 600;
-  
 }
 
-button{
+button {
   padding: 10px 16px;
   background-color: cyan;
   border: 1px solid gray;
@@ -28,19 +33,18 @@ button{
   font-size: 1rem;
 }
 
-input{
+input {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   width: 16rem;
 }
 
-
-
-button:disabled{
-  cursor:not-allowed;
+button:disabled {
+  cursor: not-allowed;
 }
 
-.result,.your-guesses{
+.result, .your-guesses {
   margin-top: 20px;
   font-size: 25px;
 }
+
