@@ -1,47 +1,47 @@
-const  userInput = document.querySelector('.user-input');
+
+
+
+
+;(function a (){
+  const userInput = document.getElementById('user-input');
+
 const form = document.querySelector('form');
-
-const resultEle = document.querySelector('.result');
-
-let randomNumber = Math.floor(Math.random() * 100) + 1; 
-// Always between 1 and 100
-
-const allGuesses = document.querySelector('.allGuesses');
-const submitBtn = document.querySelector('.submit-btn');
+const result = document.querySelector('.result');
+const userGuess = document.querySelector('.your-guesses');
+const submitBtn =   document.querySelector('.submit-btn');
 const startGameBtn = document.querySelector('.start-game');
+const allGuessArray = [];
+let randomNumber = Math.round(Math.random()*100 + 1);
 
-const allGuessesArray = [];
 
-form.addEventListener('submit',(e) =>{
-  e.preventDefault();
-  console.log("Secret Number:", randomNumber);
+form.addEventListener("submit",(e) =>{
+e.preventDefault()
+  // console.log("submitted");
   const userInputValue = parseInt(userInput.value);
-  
-  if(  userInputValue > randomNumber ){
-    resultEle.innerText = 'Too High!'
-   
-  }else if(userInputValue < randomNumber){
-resultEle.innerText = 'Too low!'
+  if(userInputValue < randomNumber ){
+result.innerText = 'too low';
+  }else if(userInputValue > randomNumber){
+result.innerText = 'too high';
   }else{
-    resultEle.innerText = 'Congrats! You guessed the right number!';
-    startGameBtn.disabled = false;
-    submitBtn.disabled = true;
+    result.innerText = 'congrats';
+  startGameBtn.disabled = false;
+  submitBtn.disabled = true;
   }
-
-  allGuessesArray.push(userInputValue);
- allGuesses.innerText = ` Your guesses: ${allGuessesArray.join(', ')}`;
-
-  userInput.value = '';
- 
-
+  // userInput.value = ""; this is first method to empty the input value or we can do it form.reset()
+  allGuessArray.push(userInputValue);
+userGuess.innerText = 'Your guesses: ' + allGuessArray.join(', ');
+  form.reset();
 })
 
 startGameBtn.addEventListener("click",() =>{
-  resultEle.innerText = "";
-  allGuesses.innerText = "";
-  startGameBtn.disabled = true;
-  submitBtn.disabled = false;
-  
-  randomNumber = Math.floor(Math.random() * 100) + 1;
-  allGuessesArray.length = 0;
+  userGuess.innerText = "";
+    result.innerText = "";
+    startGameBtn.disabled = true;
+  submitBtn.disabled =false;
+ randomNumber = Math.round(Math.random() * 100 + 1);
+
+
 })
+
+})
+
