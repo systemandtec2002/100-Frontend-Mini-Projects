@@ -6,7 +6,7 @@ const body = document.body;
 
 const colors = ['red','green','blue','orange','brown','yellow','purple','lightpink'];
 
-
+// Set default background
 body.style.backgroundColor = colors[7];
 
 btn.addEventListener("click",changeBackground);
