@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+#hoverBox{
+  padding: 1rem 4rem;
+  background: #081b31;
+  font-size: 2rem;
+  color:white;
+  border-radius: 8px;
+  cursor: pointer; transition: background 0.3s, transform 0.3s;
+}
+
+#hoverBox:hover{
+  background: #0a3d91; transform: scale(1.1);
+}
+
