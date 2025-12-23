@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+   
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="left">
+          <div class="inputs">
+            <label for="">
+              Enter Bill Amount
+              <input type="number" id="Bill" placeholder="Enter total Amount" />
+            </label>
+            <label>
+              Enter Tip
+              <input type="number" placeholder="In percentage" id="Tip" />
+            </label>
+          </div>
+        </div>
+        <input type="sumbmit" />
+      </form>
+
+      <div class="right">
+        <div class="tip">
+          <p>Tip Amount</p>
+          <p>00:00</p>
+        </div>
+        <div class="total-amount">
+          <p>Total amount to be paid</p>
+          <p>00.00</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+     const formEle = document.querySelector("form");
+
+formEle.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const bill = parseFloat(document.querySelector("#Bill").value);
+  const tip = parseFloat(document.querySelector("#Tip").value);
+
+  if (isNaN(bill) || isNaN(tip) || bill < 0 || tip < 0) {
+    alert("Please Enter valid data");
+  } 
+});
+
+    </script>
+  </body>
+</html>
